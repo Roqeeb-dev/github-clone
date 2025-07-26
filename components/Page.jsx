@@ -261,7 +261,7 @@ export default function Page() {
       </section>
       <hr />
 
-      <div className="grid grid-cols-3 p-7">
+      <div className="lg:grid lg:grid-cols-3 lg:p-7">
         <Brands
           img={figma}
           alt="Figma logo"
