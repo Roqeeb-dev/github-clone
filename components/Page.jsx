@@ -39,19 +39,6 @@ export default function Page() {
       />
       {/* This is where the video stays */}
 
-      {/* <div className="relative h-screen w-full overflow-hidden">
-        <video
-          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover z-[-1]"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="../public\hero-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div> */}
-
       <section className="flex flex-col items-center justify-center my-5">
         <Button
           text="Code &darr;"
@@ -338,7 +325,7 @@ export default function Page() {
         </li>
       </ol>
 
-      <div className="lg:flex lg:items-center lg:gap-x-20">
+      <div className="lg:flex lg:items-start lg:gap-x-20">
         <section className="px-5">
           <div className="flex items-center space-x-1 my-5 mt-20">
             <img
