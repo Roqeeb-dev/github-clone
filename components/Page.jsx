@@ -26,7 +26,8 @@ import Hero from "./Hero";
 import icons from "/icons.png";
 import GithubLogo from "/github-logo.jpg";
 import FooterLink from "./FooterLink";
-import SearchFunctionVideo from "/serach-functionality-video.png";
+import mainVideo from "../src/assets/main-video.mp4";
+import copilotVideo from "../src/assets/github-copilot-agent-mode.mp4";
 
 export default function Page() {
   return (
@@ -37,7 +38,13 @@ export default function Page() {
         p="Join the world's most widely adopted AI-powered developer platform."
         btn="Try Github Copilot"
       />
-      {/* This is where the video stays */}
+
+      <div className="flex items-center justify-center mt-5">
+        <video autoPlay controls loop className="w-full lg:max-w-[90%]">
+          <source src={mainVideo} type="video/mp4" />
+          <source src="../src/assets/main-video.mp4" type="video/mp4" />
+        </video>
+      </div>
 
       <section className="flex flex-col items-center justify-center my-5">
         <Button
@@ -76,8 +83,15 @@ export default function Page() {
         p="With GitHub Copilot embedded throughout the platform, you can simplify your toolchain, automate tasks, and improve the developer experience."
       />
 
-      {/* <img src={SearchFunctionVideo} alt="VIDEO" className="w-[70%] mx-10" /> */}
-      <hr />
+      <div className="flex items-center justify-center">
+        <video autoPlay controls loop className="w-[95%] lg:max-w-[60%]">
+          <source src={copilotVideo} type="video/mp4" />
+          <source
+            src="..src/assets/github-copilot-agent-mode.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
 
       <section className="lg:flex lg:items-start lg:space-x-5 lg:px-10">
         <Article
